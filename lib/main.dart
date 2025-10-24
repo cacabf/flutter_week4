@@ -36,25 +36,22 @@ class MyHome extends StatelessWidget {
       ),
 
       body: Container(
-        //alignment: Alignment.center,
-        //width: double.infinity,
-        //height: double.infinity,
-        margin: EdgeInsets.all(30),
-        alignment: Alignment.center,
-        color: Colors.orange,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("initext",
-              style: TextStyle(
-                fontSize: 20,
-                color: const Color.fromARGB(255, 182, 88, 88),
-              ),
-            )
-          ],
-        )
-        
-
+        margin: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: Colors.cyan,
+          borderRadius: BorderRadius.circular(30),
+          gradient: LinearGradient(begin: Alignment.topRight,
+          end: AlignmentGeometry.bottomLeft,
+          colors: [
+            Colors.blue,
+            Colors.cyan,
+            Colors.lightBlueAccent,
+          ] )
+          border: Border.all(
+            color: Colors.black,
+            width: 5,
+          ),
+        ),
       )
     );
   }
