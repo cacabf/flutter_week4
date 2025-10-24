@@ -31,6 +31,7 @@ class MyHome extends StatelessWidget {
           Icon(Icons.arrow_back),
           SizedBox(width: 15),
           Icon(Icons.search),
+          SizedBox(width: 15),
         ],
       ),
     );
