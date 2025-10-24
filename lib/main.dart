@@ -34,6 +34,7 @@ class MyHome extends StatelessWidget {
           SizedBox(width: 15),
         ],
       ),
+      body : Text("Text widget nasihuy"),
     );
   }
 }
