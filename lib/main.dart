@@ -35,41 +35,44 @@ class MyHome extends StatelessWidget {
         ],
       ),
 
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 200,
-            width: 200,
-            margin: EdgeInsets.only(top: 20),
-            decoration: BoxDecoration(
-              color: Colors.cyan,
-              borderRadius: BorderRadius.circular(30),
-              gradient: LinearGradient(
-                begin: Alignment.topRight,
-                end: AlignmentGeometry.bottomLeft,
-                colors: [Colors.blue, Colors.cyan, Colors.lightBlueAccent],
+      body: Center(
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+    
+              height: 200,
+              width: 200,
+              margin: EdgeInsets.only(top: 20),
+              decoration: BoxDecoration(
+                color: Colors.cyan,
+                borderRadius: BorderRadius.circular(30),
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: AlignmentGeometry.bottomLeft,
+                  colors: [Colors.blue, Colors.cyan, Colors.lightBlueAccent],
+                ),
+                border: Border.all(color: Colors.black, width: 5),
               ),
-              border: Border.all(color: Colors.black, width: 5),
             ),
-          ),
-
-          Container(
-            height: 200,
-            width: 200,
-            margin: EdgeInsets.only(top: 20),
-            decoration: BoxDecoration(
-              color: Colors.cyan,
-              borderRadius: BorderRadius.circular(30),
-              gradient: LinearGradient(
-                begin: Alignment.topRight,
-                end: AlignmentGeometry.bottomLeft,
-                colors: [Colors.blue, Colors.cyan, Colors.lightBlueAccent],
+        
+            Container(
+              height: 200,
+              width: 200,
+              margin: EdgeInsets.only(top: 20),
+              decoration: BoxDecoration(
+                color: Colors.cyan,
+                borderRadius: BorderRadius.circular(30),
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: AlignmentGeometry.bottomLeft,
+                  colors: [Colors.blue, Colors.cyan, Colors.lightBlueAccent],
+                ),
+                border: Border.all(color: Colors.black, width: 5),
               ),
-              border: Border.all(color: Colors.black, width: 5),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
