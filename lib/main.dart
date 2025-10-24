@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Container Demo',
+      title: 'TUGAS WEEK KE 5',
       home: MyHome(),
     );
   }
@@ -25,7 +25,7 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('INI DASHBOARD'),
+        title: Text('TUGAS WEEK 5'),
         backgroundColor: Colors.lightBlue,
         actions: [
           Icon(Icons.arrow_back),
