@@ -27,6 +27,11 @@ class MyHome extends StatelessWidget {
       appBar: AppBar(
         title: Text('Judulnya wok'),
         backgroundColor: Colors.lightBlue,
+        actions: [
+          Icon(Icons.arrow_back),
+          SizedBox(width: 15),
+          Icon(Icons.search),
+        ],
       ),
     );
   }
