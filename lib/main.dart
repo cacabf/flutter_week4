@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_container/main.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -25,7 +25,7 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Judulnya wok'),
+        title: Text('INI DASHBOARD'),
         backgroundColor: Colors.lightBlue,
         actions: [
           Icon(Icons.arrow_back),
@@ -35,24 +35,42 @@ class MyHome extends StatelessWidget {
         ],
       ),
 
-      body: Container(
-        margin: EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          color: Colors.cyan,
-          borderRadius: BorderRadius.circular(30),
-          gradient: LinearGradient(begin: Alignment.topRight,
-          end: AlignmentGeometry.bottomLeft,
-          colors: [
-            Colors.blue,
-            Colors.cyan,
-            Colors.lightBlueAccent,
-          ] )
-          border: Border.all(
-            color: Colors.black,
-            width: 5,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 200,
+            width: 200,
+            margin: EdgeInsets.only(top: 20),
+            decoration: BoxDecoration(
+              color: Colors.cyan,
+              borderRadius: BorderRadius.circular(30),
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: AlignmentGeometry.bottomLeft,
+                colors: [Colors.blue, Colors.cyan, Colors.lightBlueAccent],
+              ),
+              border: Border.all(color: Colors.black, width: 5),
+            ),
           ),
-        ),
-      )
+
+          Container(
+            height: 200,
+            width: 200,
+            margin: EdgeInsets.only(top: 20),
+            decoration: BoxDecoration(
+              color: Colors.cyan,
+              borderRadius: BorderRadius.circular(30),
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: AlignmentGeometry.bottomLeft,
+                colors: [Colors.blue, Colors.cyan, Colors.lightBlueAccent],
+              ),
+              border: Border.all(color: Colors.black, width: 5),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
